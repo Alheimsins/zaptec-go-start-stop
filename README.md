@@ -1,6 +1,6 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-# zaptec-go-start-stop (WIP)
+# zaptec-go-start-stop
 
 A module for starting and stopping your Zaptec Go EV charger
 
@@ -14,9 +14,8 @@ import { start, stop } from '@alhemisins/zaptec-go-start-stop';
 const username = '<your-zaptec-portal-username>';
 const password = '<your-zaptec-portal-password>';
 
-start({ username, password }); // starts the charger
-stop({ username, password }); // stops the charger
-
+start({ username, password }); // => { status: 'success', message: 'Started charging' }
+stop({ username, password }); // => { status: 'success', message: 'Stopped charging' }
 ```
 
 # Limitations
