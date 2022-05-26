@@ -1,0 +1,40 @@
+{
+  "name": "@alheimsins/zaptec-go-start-stop",
+  "version": "1.0.0",
+  "description": "A module for starting and stopping your Zaptec Go EV charger",
+  "main": "index.js",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib/",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "standard && ava",
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alheimsins/zaptec-go-start-stop.git"
+  },
+  "keywords": [],
+  "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alheimsins/zaptec-go-start-stop/issues"
+  },
+  "homepage": "https://github.com/Alheimsins/zaptec-go-start-stop#readme",
+  "engines": {
+    "node": ">=16.15.0"
+  },
+  "devDependencies": {
+    "ava": "4.2.0",
+    "standard": "17.0.0"
+  },
+  "dependencies": {
+    "axios": "0.27.2"
+  }
+}
