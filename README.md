@@ -9,13 +9,16 @@ A module for starting and stopping your Zaptec Go EV charger
 You will need your username and password for the [Zaptec Portal](https://portal.zaptec.com/)
 
 ```JavaScript
-import { start, stop } from '@alhemisins/zaptec-go-start-stop';
+import { start, stop } from '@alhemisins/zaptec-go-start-stop'
 
-const username = '<your-zaptec-portal-username>';
-const password = '<your-zaptec-portal-password>';
+const username = '<your-zaptec-portal-username>'
+const password = '<your-zaptec-portal-password>'
 
-start({ username, password }); // => { status: 'success', message: 'Started charging' }
-stop({ username, password }); // => { status: 'success', message: 'Stopped charging' }
+const resultStart = await start({ username, password })
+console.log(resultStart) // => { status: 'success', message: 'Started charging' }
+
+const resultStop = await top({ username, password })
+console.log(resultStop) // => { status: 'success', message: 'Stopped charging' }
 ```
 
 # Limitations
