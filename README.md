@@ -30,6 +30,7 @@ If you have multiple Zaptec Go chargers connected to your account this module wi
 - [calculate-cheapest-charging-schedule](https://github.com/Alheimsins/calculate-cheapest-charging-schedule) Simple module for calculating the cheapest charging schedule for your EV
 - [tibber-get-price-info](https://github.com/Alheimsins/tibber-get-price-info) Retrieve price info from tibber for your current subscription
 - [bmw-is-connected-to-charger](https://github.com/Alheimsins/bmw-is-connected-to-charger) Answers the question: is my BMW connected to a charger?
+- [leaf-connect](https://github.com/Alheimsins/leaf-connect) Node.js client library for the Nissan Leaf API
 
 # License
 
