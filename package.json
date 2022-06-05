@@ -1,6 +1,6 @@
 {
   "name": "@alheimsins/zaptec-go-start-stop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for starting and stopping your Zaptec Go EV charger",
   "main": "index.js",
   "type": "module",
