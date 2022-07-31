@@ -1,6 +1,6 @@
-import { authenticate } from './lib/authenticate.mjs'
-import { getCharger } from './lib/get-charger.mjs'
-import { startCharging, stopCharging } from './lib/commands.mjs'
+import { authenticate } from './lib/authenticate.js'
+import { getCharger } from './lib/get-charger.js'
+import { startCharging, stopCharging } from './lib/commands.js'
 
 async function getTokenAndCharger ({ username, password }) {
   const auth = await authenticate({ username, password })
