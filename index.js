@@ -48,4 +48,4 @@ async function stop ({ username, password }) {
   return access
 }
 
-export { start, stop }
+export { start, stop, getTokenAndCharger }
