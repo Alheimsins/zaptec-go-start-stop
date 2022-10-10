@@ -21,6 +21,18 @@ const resultStop = await top({ username, password })
 console.log(resultStop) // => { status: 'success', message: 'Stopped charging' }
 ```
 
+If you only want the chargerID and session token you can use `getTokenAndCharger`
+
+```JavaScript
+import { getTokenAndCharger } from '@alhemisins/zaptec-go-start-stop'
+
+const username = '<your-zaptec-portal-username>'
+const password = '<your-zaptec-portal-password>'
+
+const access = await getTokenAndCharger({ username, password })
+console.log(resultStart) // => { status: 'success', message: 'Found charger and authenticated', id: '<your-charger-id>', token: '<your-session-token>' }
+```
+
 # Limitations
 
 If you have multiple Zaptec Go chargers connected to your account this module will only pick the first one.
